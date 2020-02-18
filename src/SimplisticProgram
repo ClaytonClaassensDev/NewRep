@@ -1,0 +1,66 @@
+
+import java.util.*;
+import javax.swing.JOptionPane;
+
+public class SimplisticProgram{
+
+    public static void main (String []args) {
+
+        int[] sales = new int[12];
+
+        sales[0] = (1247);
+        sales[1] = (5264);
+        sales[2] = (2456);
+        sales[3] = (6321);
+        sales[4] = (2134);
+        sales[5] = (7454);
+        sales[6] = (1442);
+        sales[7] = (7894);
+        sales[8] = (3254);
+        sales[9] = (7896);
+        sales[10] = (4212);
+        sales[11] = (3214);
+
+        List <String> MonthsClone = new ArrayList<>();
+        List <String> Months = new ArrayList<>();
+
+        Months.add("January");
+        Months.add("Febraury");
+        Months.add("March");
+        Months.add("April");
+        Months.add("May");
+        Months.add("June");
+        Months.add("July");
+        Months.add("August");
+        Months.add("September");
+        Months.add("October");
+        Months.add("November");
+        Months.add("December");
+
+        //All months that start with J to new Array
+        for(String string : Months) {
+            if(string.matches("(J).*")){
+                MonthsClone.add(string);
+            }
+        }
+
+//Max Value
+
+        int largest = sales [0];
+        int count = 0;
+
+
+        for (int i = 0; i < sales.length; i++){
+            JOptionPane.showMessageDialog(null,sales[i]  + " \t " +  Months.get(i));
+        }
+
+        JOptionPane.showMessageDialog(null,"Months that start with J" + "\n\t" + MonthsClone );
+
+        JOptionPane.showMessageDialog(null,"**Array of Months**" + "\n\t" + Months);
+
+
+
+
+    }
+
+}
