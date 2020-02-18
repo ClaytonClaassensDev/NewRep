@@ -6,6 +6,9 @@ public class SimplisticProgram{
 
     public static void main (String []args) {
 
+
+        System.out.println(Clayton was here);
+
         int[] sales = new int[12];
 
         sales[0] = (1247);
